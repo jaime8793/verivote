@@ -56,7 +56,7 @@ export default function FAQsPage() {
           </div>
         ))}
       </div>
-      <div className="text-center mt-10">
+      <div className="text-center mt-20 mb-40">
         <h2 className="text-xl font-bold">
           Still have a question? Reach out to us!
         </h2>

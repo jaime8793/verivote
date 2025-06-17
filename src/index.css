@@ -8,4 +8,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@tailwind utilities;
 
+/* ✅ This is correct */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}

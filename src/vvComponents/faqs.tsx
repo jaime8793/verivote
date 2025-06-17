@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./footer";
 
 const faqs = [
   {
@@ -11,6 +12,12 @@ const faqs = [
     answer:
       "No, Verivote is a non-partisan platform that does not align with any political party.",
   },
+  { question: "How often is data updated?" },
+  { question: "Is Verivote affiliated with any political party? " },
+  { question: "How often is data updated?" },
+  { question: "Is Verivote affiliated with any political party?" },
+  { question: "How often is data updated?" },
+  { question: "Is Verivote affiliated with any political party?" },
 ];
 
 export default function FAQsPage() {
@@ -67,7 +74,8 @@ export default function FAQsPage() {
           </a>
           .
         </p>
-      </div>
+          </div>
+          <Footer/>
     </div>
   );
 }

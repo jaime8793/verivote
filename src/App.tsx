@@ -5,6 +5,7 @@ import Homepage from "./vvComponents/homepage";
 import AboutUs from "./vvComponents/aboutUs";
 import FAQsPage from "./vvComponents/faqs";
 import ContactUsPage from "./vvComponents/contact";
+import Elections from "./vvComponents/elections";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/contact" element={<ContactUsPage />} />
+          <Route path="/elections" element={<Elections />} />
         </Routes>
       </main>
     </Router>

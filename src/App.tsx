@@ -8,6 +8,7 @@ import ContactUsPage from "./vvComponents/contact";
 import Elections from "./vvComponents/elections";
 import Resources from "./vvComponents/resources";
 import Issues from "./vvComponents/issues";
+import IssuesDetailed from "./vvComponents/detailedIssues";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/elections" element={<Elections />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/issues" element={<Issues />} />
+          <Route path="/issues/:id" element={<IssuesDetailed />} />
         </Routes>
       </main>
     </Router>

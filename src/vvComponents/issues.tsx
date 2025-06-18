@@ -130,9 +130,10 @@ const Issues = () => {
         </div>
 
         {/* Main Content Grid */}
-        <div className="lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12">
+
+        <div className="lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12 p-20 ">
           {/* Left Column - Issues List */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3 ">
             <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
               {issues.map((issue) => (
                 <Link

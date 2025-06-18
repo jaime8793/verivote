@@ -23,17 +23,20 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src="/" alt="Logo" className="h-8" />
-            <span className="font-bold text-xl text-primary">VeriVote</span>
+            <img src="../src/assets/App Icon.png" alt="Logo" className="h-8" />
           </div>
 
           {/* Mobile Icons */}
           <div className="flex items-center space-x-4 md:hidden">
             <button className="text-gray-600">
-              <Globe size={20} />
+             <Globe/>
             </button>
             <button className="text-gray-600">
-              <Star size={20} />
+              <img
+                src="../src/assets/mynaui_accessibility-solid.png"
+                alt="Logo"
+                className="h-8"
+              />
             </button>
             <button
               onClick={() => setMenuOpen(true)}

@@ -1,3 +1,7 @@
+
+
+
+
 export default function Footer() {
   return (
     <footer className="bg-blue-900 text-white text-xs px-4 py-8 text-center">
@@ -23,9 +27,21 @@ export default function Footer() {
         </a>
       </div>
       <div className="flex justify-center space-x-4">
-        <img src="/icon-facebook.svg" alt="Facebook" className="w-4 h-4" />
-        <img src="/icon-twitter.svg" alt="Twitter" className="w-4 h-4" />
-        <img src="/icon-instagram.svg" alt="Instagram" className="w-4 h-4" />
+        <img
+          src="../src/assets/twitter.svg"
+          alt="Facebook"
+          className="w-4 h-4"
+        />
+        <img
+          src="../src/assets/instagram.svg"
+          alt="Twitter"
+          className="w-4 h-4"
+        />
+        <img
+          src="../src/assets/facebook.svg"
+          alt="Instagram"
+          className="w-4 h-4"
+        />
       </div>
     </footer>
   );

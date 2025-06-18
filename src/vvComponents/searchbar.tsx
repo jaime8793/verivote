@@ -20,20 +20,12 @@ export default function SearchBar() {
         className="ml-2 w-full outline-none text-sm placeholder-gray-500"
       />
       <button className="ml-2 flex-shrink-0">
-        <svg
-          className="w-5 h-5 text-green-600"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M5 13l4 4L19 7"
-          />
-        </svg>
+        <img
+          src="../src/assets/basil_location-solid.png"
+          alt="Logo"
+          className="h-8"
+        />
       </button>
     </div>
-  )
+  );
 }

@@ -36,42 +36,6 @@ const IssuesDetailed = () => {
         <span className="underline text-blue-600">Healthcare</span>
       </p>
 
-      {/* Search Bar */}
-      {/* <div className="flex items-center border border-black rounded-full px-3 py-2 mb-4 lg:mb-6 max-w-lg lg:max-w-xl mx-auto lg:mx-0">
-        <svg
-          className="w-5 h-5 lg:w-6 lg:h-6 text-black"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 6.65a7.5 7.5 0 010 10.6z"
-          />
-        </svg>
-        <input
-          type="text"
-          placeholder="Search by name, office, or district..."
-          className="ml-2 w-full outline-none text-xs lg:text-sm placeholder-gray-600"
-        />
-        <button className="ml-2">
-          <svg
-            className="w-5 h-5 lg:w-6 lg:h-6 text-green-600"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-        </button>
-      </div> */}
           <SearchBar/>
 
       {/* Header Section */}

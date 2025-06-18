@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="Logo" className="h-8" />
+            <img src="/" alt="Logo" className="h-8" />
             <span className="font-bold text-xl text-primary">VeriVote</span>
           </div>
 

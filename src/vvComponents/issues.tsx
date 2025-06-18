@@ -8,10 +8,6 @@ const Link = ({ to, children, className, ...props }) => (
   </a>
 );
 
-
-
-
-
 const Issues = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const carouselRef = useRef(null);
@@ -21,6 +17,16 @@ const Issues = () => {
       id: "healthcare",
       title: "Healthcare",
       description: "Affordable access for all",
+    },
+    {
+      id: "youth-employment",
+      title: "Youth Employment",
+      description: "Creating jobs for a growing workforce",
+    },
+    {
+      id: "education",
+      title: "Education",
+      description: "Improving the quality of schools",
     },
     {
       id: "youth-employment",
@@ -42,6 +48,8 @@ const Issues = () => {
       alt: "Cost of Living",
       category: "Trending Nationally",
       title: "Cost of Living Crisis",
+      content:
+        "Prices are rising. What are candidates doing about inflation and wages?",
     },
     {
       id: "genz-ballot",
@@ -50,6 +58,7 @@ const Issues = () => {
       alt: "Gen Z and the Ballot",
       category: "Youth focused",
       title: "Gen Z and the Ballot",
+      content: "Youth are demanding representation. Are candidates listening?",
     },
     {
       id: "climate-change",
@@ -58,6 +67,8 @@ const Issues = () => {
       alt: "Climate Action",
       category: "Environmental",
       title: "Climate Action Now",
+      content:
+        "Prices are rising. What are candidates doing about inflation and wages?",
     },
     {
       id: "digital-privacy",
@@ -66,6 +77,7 @@ const Issues = () => {
       alt: "Digital Privacy",
       category: "Technology",
       title: "Digital Privacy Rights",
+      content: "Youth are demanding representation. Are candidates listening?",
     },
   ];
 
@@ -192,15 +204,12 @@ const Issues = () => {
         </div>
 
         {/* Mobile/All Screens Hot Topics Carousel */}
-        <div className="lg:hidden mt-8">
+        <div className=" mt-8">
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="text-xl font-bold mb-2">
-                Hot Topics: Trending Conversations
+                Hot Topics: Trending National Conversations
               </h2>
-              <p className="text-sm text-gray-600">
-                Tap into what's happening today
-              </p>
             </div>
             <div className="flex gap-2">
               <button
@@ -258,19 +267,22 @@ const Issues = () => {
                 key={topic.id}
                 className="group cursor-pointer flex-shrink-0 w-72"
               >
-                <div className="overflow-hidden rounded-lg shadow-md">
+                <div className="overflow-hidden rounded-lg shadow-md mt-2">
                   <img
                     src={topic.image}
                     alt={topic.alt}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-3">
-                  <p className="text-xs italic text-gray-500 mb-1">
+                <div className="mb-2">
+                  <p className=" mt-2 font-semibold text-xs italic mb-1">
                     {topic.category}
                   </p>
-                  <p className="font-semibold text-sm group-hover:text-blue-900 transition-colors">
+                  <p className="font-bold text-[1rem] group-hover:text-blue-900 transition-colors">
                     {topic.title}
+                  </p>
+                  <p className=" text-sm group-hover:text-blue-900 transition-colors">
+                    {topic.content}
                   </p>
                 </div>
               </div>
@@ -278,8 +290,10 @@ const Issues = () => {
           </div>
         </div>
 
-        {/* Alternative Full-Width Carousel Layout */}
-        <div className="mt-12">
+        <p className="font-bold">
+          Tap into what’s happening today and find out who’s talking about it.
+        </p>
+        <div className="hidden sm:block mt-12">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold mb-2">
@@ -354,9 +368,6 @@ const Issues = () => {
               </div>
             ))}
           </div>
-          <p className="text-[1rem] font-bold lg:text-base mt-20 mb-14">
-            Tap into what’s happening today and find out who’s talking about it.
-          </p>
         </div>
 
         {/* Bottom Spacing */}

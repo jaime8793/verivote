@@ -7,6 +7,7 @@ import FAQsPage from "./vvComponents/faqs";
 import ContactUsPage from "./vvComponents/contact";
 import Elections from "./vvComponents/elections";
 import Resources from "./vvComponents/resources";
+import Issues from "./vvComponents/issues";
 function App() {
   return (
     <Router>
@@ -19,7 +20,7 @@ function App() {
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="/elections" element={<Elections />} />
           <Route path="/resources" element={<Resources />} />
-          
+          <Route path="/issues" element={<Issues />} />
         </Routes>
       </main>
     </Router>

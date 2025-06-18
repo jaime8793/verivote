@@ -1,4 +1,5 @@
 // import { useNavigate } from "react-router-dom";
+import Footer from "./footer";
 
 const IssuesDetailed = () => {
 //   const navigate = useNavigate();
@@ -97,35 +98,37 @@ const IssuesDetailed = () => {
 
       {/* Candidates */}
       {candidates.map((candidate) => (
-        <div
-          key={candidate.id}
-          className="bg-[#003366] rounded-md p-2 text-white mb-4 flex items-center"
-        >
-          <img
-            src={candidate.image}
-            alt={candidate.name}
-            className="w-14 h-14 rounded object-cover mr-3"
-          />
-          <div className="text-xs">
-            <p>
-              <span className="font-semibold">Name:</span> {candidate.name}
-            </p>
-            <p>
-              <span className="font-semibold">Party:</span> {candidate.party}
-            </p>
-            <p>
-              <span className="font-semibold">Stance:</span> {candidate.stance}
-            </p>
+        <div>
+          {/* Candidate Card */}
+          <div
+            key={candidate.id}
+            className="bg-[#003366] rounded-md p-2 text-white mb-2 flex items-center"
+          >
+            <img
+              src={candidate.image}
+              alt={candidate.name}
+              className="w-14 h-14 rounded object-cover mr-3"
+            />
+            <div className="text-xs">
+              <p>
+                <span className="font-semibold">Name:</span> {candidate.name}
+              </p>
+              <p>
+                <span className="font-semibold">Party:</span> {candidate.party}
+              </p>
+              <p>
+                <span className="font-semibold">Stance:</span>{" "}
+                {candidate.stance}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
 
-      {/* View Profiles */}
-      {candidates.map((candidate) => (
-        <div key={`btn-${candidate.id}`} className="flex justify-end mb-3">
-          <button className="border border-[#003366] text-[#003366] rounded-full px-4 py-1 text-xs font-semibold">
-            View Profile
-          </button>
+          {/* Button outside, floated right */}
+          <div className="flex justify-end mb-5">
+            <button className="border border-[#003366] rounded-full px-4 py-1 text-xs font-semibold">
+              View Profile
+            </button>
+          </div>
         </div>
       ))}
 
@@ -133,11 +136,20 @@ const IssuesDetailed = () => {
       <p className="text-center text-xs mb-1">3/27</p>
       <p className="text-center text-red-600 italic text-sm mb-5">Load More</p>
 
+      <div>
+        <p>
+          Compare how different candidates plan to improve healthcare systems in
+          Kenya
+        </p>
+      </div>
+
       <div className="flex justify-center">
-        <button className="bg-[#007aff] text-white font-semibold py-2 px-6 rounded-full">
+        <button className="bg-[#007aff] w-60 text-white font-semibold py-2 px-6 rounded-full mt-10">
           Compare Candidates
         </button>
       </div>
+      <div className="mb-20 lg:mb-16"></div>
+      <Footer />
     </div>
   );
 };

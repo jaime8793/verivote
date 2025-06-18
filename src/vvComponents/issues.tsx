@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
-// Mock components to replace imports
 const Link = ({ to, children, className, ...props }) => (
   <a href={to} className={className} {...props}>
     {children}

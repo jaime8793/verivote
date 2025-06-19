@@ -1,6 +1,6 @@
 export default function SearchBar() {
   return (
-    <div className="flex items-center border border-gray-400 rounded-full px-3 py-2 mb-4 lg:mb-6 max-w-lg mx-auto lg:mx-0">
+    <div className="flex items-center border-black border-2 rounded-full px-3 py-2 mb-4 lg:mb-6 max-w-lg mx-auto lg:mx-0">
       <svg
         className="w-5 h-5 text-gray-500 flex-shrink-0"
         fill="none"

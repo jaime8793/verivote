@@ -60,7 +60,7 @@ export default function FAQsPage() {
         <h2 className="text-xl font-bold">
           Still have a question? Reach out to us!
         </h2>
-        <p className="text-sm mt-2">
+        <p className="text-sm mt-6">
           In case you didn’t find the answers to your questions you can contact
           our
           <a href="/contact" className="text-red-600 underline">

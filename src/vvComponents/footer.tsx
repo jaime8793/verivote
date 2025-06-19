@@ -4,7 +4,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white text-xs px-4 py-8 text-center">
+    <footer className="bg-[#003366] text-white text-xs px-4 py-8 text-center">
       <div className="mb-2 font-bold">VeriVote</div>
       <p className="mb-2">
         <strong>Your Voice. Your Vote. Verified.</strong>

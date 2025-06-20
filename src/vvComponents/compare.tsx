@@ -4,9 +4,9 @@ import Footer from "./footer";
 const Compare = () => {
   return (
     <>
-      <main className="w-full max-w-md mx-auto px-4 py-4 font-[Helvetica] text-gray-900">
+      <main className="w-full max-w-md md:max-w-3xl lg:max-w-5xl mx-auto px-4 py-4 font-[Helvetica] text-gray-900">
         {/* Breadcrumb */}
-        <p className="text-xs mb-4">Home &gt; Compare</p>
+        <p className="text-xs md:text-sm mb-4">Home &gt; Compare</p>
 
         {/* Search */}
         <div className="mb-5">
@@ -14,12 +14,12 @@ const Compare = () => {
         </div>
 
         {/* Header */}
-        <h1 className="text-2xl text-center font-extrabold mb-4">
+        <h1 className="text-2xl md:text-3xl text-center font-extrabold mb-4">
           Compare Candidates
         </h1>
 
         {/* Dropdowns */}
-        <div className="flex gap-2 mb-2">
+        <div className="flex flex-col md:flex-row gap-2 mb-2">
           <select className="w-full border border-[#43761E] rounded-full px-3 py-1 text-sm">
             <option className="text-gray-300">Candidate 1</option>
           </select>
@@ -40,13 +40,13 @@ const Compare = () => {
 
         {/* Compare Button */}
         <div className="mb-6 text-center">
-          <button className="bg-blue-500 italic w-80 hover:bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-full ">
+          <button className="bg-blue-500 italic w-80 hover:bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-full">
             Compare
           </button>
         </div>
 
         {/* Candidate Cards */}
-        <div className="grid grid-cols-2 gap-2 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
           <div className="border border-gray-300 rounded px-2 py-3 text-center">
             <img
               src="/candidate1.jpg"
@@ -117,7 +117,9 @@ const Compare = () => {
 
         {/* Candidate Score */}
         <div className="mt-8 mb-6">
-          <h2 className="text-xl font-extrabold mb-4">Candidate Score</h2>
+          <h2 className="text-xl md:text-2xl font-extrabold mb-4">
+            Candidate Score
+          </h2>
           <div className="grid grid-cols-2 gap-3 text-center text-xs">
             <div className="bg-[#A0B9D9] rounded p-3">
               <p className="font-bold mb-1">Candidate 1</p>
@@ -150,8 +152,8 @@ const Compare = () => {
 
           <h3 className="text-sm font-extrabold mb-1">Assessment Criteria</h3>
           <p className="text-xs mb-2 font-bold">What we look at</p>
-          <p className="text-xs mb-6 ">
-            Each candidate is assesed along the following areas:
+          <p className="text-xs mb-6">
+            Each candidate is assessed along the following areas:
           </p>
           <ul className="text-xs list-disc list-inside space-y-1">
             <li className="mb-4">
@@ -160,15 +162,15 @@ const Compare = () => {
             </li>
             <li className="mb-4">
               <strong>Leadership & Decision-Making</strong>
-              <p className="ml-4"> Sound decision-making record </p>
+              <p className="ml-4">Sound decision-making record</p>
             </li>
             <li className="mb-4">
               <strong>Alternative Public Service</strong>
-              <p className="ml-4"> Non-political contributions </p>
+              <p className="ml-4">Non-political contributions</p>
             </li>
             <li className="mb-4">
-              <strong>Professional Contributions</strong>:
-              <p className="ml-4"> Community work and more</p>
+              <strong>Professional Contributions</strong>
+              <p className="ml-4">Community work and more</p>
             </li>
           </ul>
         </div>

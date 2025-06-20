@@ -4,9 +4,9 @@ import Footer from "./footer";
 const Candidates = () => {
   return (
     <>
-      <main className="w-full max-w-md mx-auto px-4 py-4 font-[Helvetica] text-gray-900">
+      <main className="w-full max-w-md md:max-w-4xl lg:max-w-6xl mx-auto px-4 py-4 font-[Helvetica] text-gray-900">
         {/* Breadcrumb */}
-        <p className="text-xs mb-4">Home &gt; Candidates</p>
+        <p className="text-xs md:text-sm mb-4">Home &gt; Candidates</p>
 
         {/* Search */}
         <div className="mb-4">
@@ -15,32 +15,34 @@ const Candidates = () => {
 
         {/* CTA Filter */}
         <div className="mb-4">
-          <button className="bg-[#43761E] text-white text-xs px-4 py-1 rounded-full font-medium">
+          <button className="bg-[#43761E] text-white text-xs md:text-sm px-4 py-1 rounded-full font-medium">
             Filter
           </button>
         </div>
+
+        {/* Category Filter Button */}
         <div className="mb-4">
-          <button className="border shadow mt-4 text-black text-xs px-4 py-1 rounded font-[1rem] ">
+          <button className="border shadow mt-4 text-black text-xs md:text-sm px-4 py-1 rounded font-medium">
             Presidential Candidates
           </button>
         </div>
 
-        {/* Hero Debate Image */}
+        {/* Hero Image */}
         <div className="mb-4">
           <div
-            className="w-full h-48 bg-cover bg-center rounded-md relative overflow-hidden"
+            className="w-full h-48 md:h-64 lg:h-72 bg-cover bg-center rounded-md relative overflow-hidden"
             style={{ backgroundImage: "url('/debate-stage.jpg')" }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-4 text-white">
-              <h2 className="text-xl font-extrabold leading-tight">
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-4 md:px-6 text-white">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight">
                 The 2027 Presidential Debate Stage
               </h2>
-              <p className="text-xs mt-1">
+              <p className="text-xs md:text-sm mt-1 md:mt-2">
                 See where Kenya’s presidential hopefuls stand on the issues that
                 matter. Watch them share their visions, challenge each other’s
                 plans, and speak directly to you—the voter.
               </p>
-              <p className="text-[10px] italic text-yellow-300 mt-1 underline">
+              <p className="text-[10px] md:text-xs italic text-yellow-300 mt-1 underline">
                 Watch Highlights
               </p>
             </div>
@@ -49,8 +51,10 @@ const Candidates = () => {
 
         {/* Candidate Grid */}
         <div className="mb-6">
-          <h2 className="text-xl font-extrabold mb-16 mt-16">Presidential Candidates</h2>
-          <div className="grid grid-cols-2 gap-4 text-xs">
+          <h2 className="text-xl md:text-2xl font-extrabold mb-8 mt-16">
+            Presidential Candidates
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-xs md:text-sm">
             {[
               {
                 name: "Samuel Kiptroo",
@@ -108,19 +112,21 @@ const Candidates = () => {
                   className="rounded w-full h-32 object-cover mb-2"
                 />
                 <p className="font-bold">{cand.name}</p>
-                <p className="text-[11px] italic">{cand.party}</p>
-                <p className="text-[10px] mt-1 text-gray-600">“{cand.quote}”</p>
+                <p className="text-[11px] md:text-sm italic">{cand.party}</p>
+                <p className="text-[10px] md:text-xs mt-1 text-gray-600">
+                  “{cand.quote}”
+                </p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center my-6">
-          <h3 className="text-base font-extrabold mb-6 mt-20">
+        {/* CTA Section */}
+        <div className="text-center my-6 md:my-10">
+          <h3 className="text-base md:text-xl font-extrabold mb-6 mt-20">
             Your Vote, Your Voice
           </h3>
-          <p className="text-xs mb-10 font-bold">
+          <p className="text-xs md:text-sm mb-10 font-bold">
             Explore what each presidential candidate stands for — on your terms.
             Scroll, compare, and stay informed before you cast your ballot.
           </p>

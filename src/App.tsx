@@ -12,6 +12,7 @@ import IssuesDetailed from "./vvComponents/detailedIssues";
 import Compare from "./vvComponents/compare";
 import Candidates from "./vvComponents/candidates";
 import CandidatesExpanded from "./vvComponents/CandidatesExpanded";
+import SingleCandidate from "./vvComponents/singleCandidate";
 function App() {
   return (
     <Router>
@@ -29,6 +30,7 @@ function App() {
           <Route path="/compare" element={<Compare />} />
           <Route path="/candidates" element={<Candidates/>} />
           <Route path="/candidatesExpanded" element={<CandidatesExpanded/>} />
+          <Route path="/singleCandidate" element={<SingleCandidate/>} />
 
         </Routes>
       </main>

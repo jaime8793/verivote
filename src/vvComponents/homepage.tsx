@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
@@ -42,7 +42,6 @@ const infoItems = [
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const infoRef = useRef();
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -21,7 +21,7 @@ const faqs = [
 ];
 
 export default function FAQsPage() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <div className="mt-20 px-4 max-w-2xl mx-auto">

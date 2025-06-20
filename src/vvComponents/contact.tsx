@@ -46,7 +46,7 @@ export default function ContactUsPage() {
             <div>
               <label className="text-sm font-semibold block">Message</label>
               <textarea
-                rows="4"
+                rows={4} 
                 placeholder="Type your message here..."
                 className="w-full h-194px border-black border px-4 py-2 rounded mt-1"
               ></textarea>

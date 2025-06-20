@@ -154,21 +154,21 @@ const Compare = () => {
             Each candidate is assesed along the following areas:
           </p>
           <ul className="text-xs list-disc list-inside space-y-1">
-            <li>
+            <li className="mb-4">
               <strong>Experience</strong>
-              <p>Political/professional background</p>
+              <p className="ml-4">Political/professional background</p>
             </li>
-            <li>
+            <li className="mb-4">
               <strong>Leadership & Decision-Making</strong>
-              <p> Sound decision-making record </p>
+              <p className="ml-4"> Sound decision-making record </p>
             </li>
-            <li>
+            <li className="mb-4">
               <strong>Alternative Public Service</strong>
-              <p> Non-political contributions </p>
+              <p className="ml-4"> Non-political contributions </p>
             </li>
-            <li>
-              <strong>Professional Contributions</strong>: Community work and
-              more
+            <li className="mb-4">
+              <strong>Professional Contributions</strong>:
+              <p className="ml-4"> Community work and more</p>
             </li>
           </ul>
         </div>

@@ -31,7 +31,10 @@ const Candidates = () => {
         <div className="mb-4">
           <div
             className="w-full h-48 md:h-64 lg:h-72 bg-cover bg-center rounded-md relative overflow-hidden"
-            style={{ backgroundImage: "url('/debate-stage.jpg')" }}
+            style={{
+              backgroundImage:
+                "url('public/mustafa-alabri-JxzV1k-sfCU-unsplash.png')",
+            }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-4 md:px-6 text-white">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight">
@@ -60,49 +63,49 @@ const Candidates = () => {
                 name: "Samuel Kiptroo",
                 party: "The National Alliance (TNA)",
                 quote: "Justice is the Agenda",
-                img: "/candidate1.jpg",
+                img: "src/assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png",
               },
               {
                 name: "Fatima Noor",
                 party: "Jubilee Party",
                 quote: "Leading with Vision, Grounded in Truth",
-                img: "/candidate2.jpg",
+                img: "src/assets/Get your headshots! It's the second half of the….png",
               },
               {
                 name: "Kevin Oduor",
                 party: "KANU",
                 quote: "Youth. Jobs. The Future.",
-                img: "/candidate3.jpg",
+                img: "src/assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png",
               },
               {
                 name: "Martin Kilonzo",
                 party: "Maendeleo Chap Chap",
                 quote: "Smart Leadership for Real Change",
-                img: "/candidate4.jpg",
+                img: "src/assets/James understands the power of a refined corporate….png",
               },
               {
                 name: "Kevin Oduor",
                 party: "KANU",
                 quote: "Youth. Jobs. The Future.",
-                img: "/candidate3.jpg",
+                img: "src/assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png",
               },
               {
                 name: "Grace Wanjiru",
                 party: "Wiper Democratic Movement – Kenya",
                 quote: "Hope for Every Household",
-                img: "/candidate5.jpg",
+                img: "src/assets/Get your headshots! It's the second half of the….png",
               },
               {
                 name: "Daniel Okoth",
                 party: "UDEA",
                 quote: "Integrity. Action. Progress.",
-                img: "/candidate6.jpg",
+                img: "src/assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png",
               },
               {
                 name: "Aisha Mutua",
                 party: "ODM",
                 quote: "Together, We Prosper",
-                img: "/candidate7.jpg",
+                img: "src/assets/James understands the power of a refined corporate….png",
               },
             ].map((cand, i) => (
               <div key={i} className="text-center">

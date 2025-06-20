@@ -16,16 +16,17 @@ const SingleCandidate = () => {
         {/* Candidate Card */}
         <div className="border rounded-md p-4 mb-4">
           <img
-            src="/candidate-profile.jpg"
+            src="src/assets/candidates/9015f31d-fdb3-4125-b9d5-8fcceed06925.png"
             alt="Boniface Wanjoki"
-            className="w-full h-48 object-cover rounded mb-3"
+            className="w-56 h-56 m-auto object-cover rounded mb-3"
           />
-          <p className="font-bold text-sm">Boniface Wanjoki</p>
-          <p className="text-xs text-gray-700">
-            M, 38
-            <br />
-            Candidate: Governor - Nairobi County
-          </p>
+          <div>
+            <p className="font-extrabold text-sm">Boniface Wanjoki</p>
+            <p className="text-xs font-extrabold text-gray-700 float-end">
+              M, 36
+            </p>
+          </div>
+          <p className="font-bold">Candidate: Governor - Nairobi County</p>
           <p className="text-xs text-[#43761E] mt-2">
             Kenya African National Union (KANU)
           </p>
@@ -123,11 +124,11 @@ const SingleCandidate = () => {
         <h2 className="text-sm font-extrabold mb-3">Campaign & Media</h2>
         <div className="relative mb-3">
           <img
-            src="/jubilee-campaign.jpg"
+            src="src/assets/285708338_403252745164311_801316957641000861_n-370x370.jpg"
             alt="Jubilee Campaign"
             className="rounded w-full"
           />
-          <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 text-xs font-semibold rounded">
+          <div className="absolute bottom-0 w-full h-32 bg-black bg-opacity-75 text-white px-5 py-5  font-semibold">
             Event Title: Youth Engagement
             <br />
             Date: February 28, 2025

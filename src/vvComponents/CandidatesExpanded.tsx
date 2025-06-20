@@ -68,7 +68,7 @@ const CandidatesExpanded = () => {
                 .map((_, i) => (
                   <div key={i} className="text-center">
                     <img
-                      src="/candidate-placeholder.jpg"
+                      src="src/assets/candidates/Winston Salem Corporate Headshots & Personal….png"
                       alt="Candidate"
                       className="w-full rounded"
                     />
@@ -87,7 +87,7 @@ const CandidatesExpanded = () => {
 
             {/* View All Button */}
             <div className="text-center mt-3">
-              <button className="text-xs md:text-sm text-black italic border border-blue-800 px-4 py-[2px] rounded-full">
+              <button className="text-xs md:text-sm float-end text-black italic border border-blue-800 px-4 py-[2px] rounded-full">
                 View All
               </button>
             </div>

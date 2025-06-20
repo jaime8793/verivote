@@ -5,18 +5,21 @@ import Footer from "./footer";
 // Sample hero carousel data
 const heroSlides = [
   {
-    image: "/hero1.jpg",
+    image:
+      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Know your candidates.",
     subtext:
       "Explore upcoming campaign stops and hear directly from the people seeking your vote.",
   },
   {
-    image: "/hero2.jpg",
+    image:
+      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Vote with confidence.",
     subtext: "Get the facts before you head to the polls.",
   },
   {
-    image: "/hero3.jpg",
+    image:
+      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Make your voice count.",
     subtext: "Learn how to register and get involved today.",
   },
@@ -135,7 +138,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-4 lg:gap-6 lg:mt-12 xl:gap-8 xl:mt-16">
             <div className="text-center">
               <img
-                src="/candidate1.jpg"
+                src="src/assets/602895d8-aa40-48ed-9178-2873e29a51da.png"
                 alt="Candidate 1"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -146,7 +149,7 @@ const LandingPage = () => {
             </div>
             <div className="text-center">
               <img
-                src="/candidate2.jpg"
+                src="src/assets/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
                 alt="Candidate 2"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -318,13 +321,13 @@ const LandingPage = () => {
 
       {/* Testimonial */}
       <div className="px-8 lg:px-6 xl:px-8">
-        <section className="bg-[#F2D399] px-2 py-6 text-center text-xs mb-8 rounded-lg lg:max-w-2xl lg:mx-auto lg:px-6 lg:py-8 xl:max-w-3xl xl:px-8 xl:py-10">
+        <section className="bg-[#F2D399] px-2 pt-2 pb-5  text-center text-xs mb-8 rounded-lg lg:max-w-2xl lg:mx-auto lg:px-6 lg:py-8 xl:max-w-3xl xl:px-8 xl:py-10">
           <div className="max-w-xs mx-auto text-left lg:max-w-none">
             <div className="flex items-center space-x-2 mb-2 lg:justify-center lg:mb-4 xl:mb-6">
               <img
-                src="/user.jpg"
+                src="src/assets/4eb55c90-7741-4c05-b621-faabe722221d.png"
                 alt="User"
-                className="w-6 h-6 rounded-full lg:w-8 lg:h-8 xl:w-10 xl:h-10"
+                className="w-8 h-8 rounded-full lg:w-8 lg:h-8 xl:w-10 xl:h-10"
               />
               <span className="font-bold italic lg:text-sm xl:text-base">
                 Anonymous User
@@ -344,7 +347,7 @@ const LandingPage = () => {
 
       {/* Final CTA */}
       <div className="text-center mb-12 px-4 lg:mb-16 xl:mb-20">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-full lg:text-base lg:px-8 lg:py-3 xl:text-lg xl:px-10 xl:py-4 transition-colors">
+        <button className="bg-blue-500 hover:bg-blue-600 w-70 text-white text-sm font-medium px-6 py-2 rounded-full lg:text-base lg:px-8 lg:py-3 xl:text-lg xl:px-10 xl:py-4 transition-colors">
           Explore Candidates Now
         </button>
       </div>

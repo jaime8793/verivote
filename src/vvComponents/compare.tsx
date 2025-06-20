@@ -40,7 +40,7 @@ const Compare = () => {
 
         {/* Compare Button */}
         <div className="mb-6 text-center">
-          <button className="bg-blue-500 italic w-80 hover:bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-full">
+          <button className="bg-[#0077CC] italic w-60 hover:bg-blue-600 text-white text-sm font-medium px-6 py-2 rounded-full">
             Compare
           </button>
         </div>
@@ -49,7 +49,7 @@ const Compare = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
           <div className="border border-gray-300 rounded px-2 py-3 text-center">
             <img
-              src="/candidate1.jpg"
+              src="src/assets/candidates/6249d6cf-faea-4353-acad-916f6b2c6345.png"
               alt="Martin Kilonzo"
               className="rounded mb-2"
             />
@@ -61,7 +61,7 @@ const Compare = () => {
           </div>
           <div className="border border-[#43761E] rounded px-2 py-3 text-center">
             <img
-              src="/candidate2.jpg"
+              src="src/assets/candidates/9015f31d-fdb3-4125-b9d5-8fcceed06925.png"
               alt="Kevin Oduor"
               className="rounded mb-2"
             />
@@ -124,13 +124,13 @@ const Compare = () => {
             <div className="bg-[#A0B9D9] rounded p-3">
               <p className="font-bold mb-1">Candidate 1</p>
               <p className="text-sm font-bold">Martin Kilonzo</p>
-              <p className="text-2xl font-extrabold">76%</p>
+              <p className="text-2xl font-extrabold text-[#003366]">76%</p>
               <p className="italic mt-1">Suitable</p>
             </div>
             <div className="bg-[#90BD70] rounded p-3">
               <p className="font-bold mb-1">Candidate 2</p>
               <p className="text-sm font-bold">Kevin Oduor</p>
-              <p className="text-2xl font-extrabold">60%</p>
+              <p className="text-2xl font-extrabold text-[#003366]">60%</p>
               <p className="italic mt-1">Suitable</p>
             </div>
           </div>

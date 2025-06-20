@@ -8,7 +8,7 @@ const Resources = () => {
       <div className="max-w-md mx-auto lg:max-w-4xl xl:max-w-6xl px-4 py-6">
         {/* Page Title */}
         <div className="text-center mt-6 mb-8 lg:mb-12">
-          <h1 className="text-2xl font-bold lg:text-3xl xl:text-4xl">
+          <h1 className="text-[2rem] font-extrabold lg:text-3xl xl:text-4xl">
             Resources
           </h1>
         </div>
@@ -61,24 +61,24 @@ const Resources = () => {
               <h3 className="font-bold text-lg mb-1 lg:text-xl lg:mb-2">
                 Voter Education
               </h3>
-              <p className="text-sm mb-2 lg:text-base lg:mb-4">
+              <p className="text-sm mb-10 lg:text-base lg:mb-4 mt-4">
                 Learn about the voting process, your rights, and how to make
                 your voice heard.
               </p>
               <img
-                src="/images/voter-education.jpg"
+                src="src/assets/barbara-burgess-3uiVo7ala9k-unsplash.png"
                 alt="Voting is my superpower"
-                className="rounded mb-4 w-full h-48 lg:h-56 object-cover"
+                className="rounded mb-4 w-48 m-auto h-48 lg:h-56 object-cover"
               />
 
-              <div className="flex flex-col gap-3 lg:gap-4 items-center">
-                <button className="bg-[#003087] text-white w-90 py-2 rounded-md lg:py-3 lg:text-lg hover:bg-[#002066] transition-colors">
+              <div className="flex flex-col gap-3 lg:gap-4 items-center mt-10">
+                <button className="bg-[#003366] text-white text-sm rounded px-4 py-2 w-full md:w-auto">
                   Register to Vote
                 </button>
-                <button className="bg-[#003087] text-white w-90 py-2 rounded-md lg:py-3 lg:text-lg hover:bg-[#002066] transition-colors">
+                <button className=" bg-[#003366] text-white text-sm rounded px-4 py-2 w-full md:w-auto">
                   Check Your Registration Status
                 </button>
-                <button className="bg-[#003087] text-white py-2 w-90 rounded-md lg:py-3 lg:text-lg hover:bg-[#002066] transition-colors">
+                <button className="bg-[#003366] text-white text-sm rounded px-4 py-2 w-full md:w-auto">
                   Find Your Polling Station
                 </button>
               </div>
@@ -97,7 +97,7 @@ const Resources = () => {
                 credible sources
               </p>
               <Link to="/elections" className="flex flex-col items-center">
-                <button className="bg-[#007aff] text-white py-2 px-4 rounded-4xl w-80 m-10 lg:py-3 lg:text-lg hover:bg-[#0056cc] transition-colors">
+                <button className="bg-[#007aff] w-70 text-white py-2 px-4 rounded-4xl  m-10 lg:py-3 lg:text-lg hover:bg-[#0056cc] transition-colors">
                   Explore Candidates Now
                 </button>
               </Link>
@@ -108,21 +108,21 @@ const Resources = () => {
           <div className="mt-8 lg:mt-0 space-y-8 lg:space-y-10">
             {/* Civic Engagement */}
             <div>
-              <h3 className="font-bold text-lg mb-1 lg:text-xl lg:mb-2">
+              <h3 className="font-bold mb-10 text-lg  lg:text-xl lg:mb-2">
                 Civic Engagement
               </h3>
 
               <img
-                src="/images/civic-engagement.jpg"
+                src="src/assets/tito-texidor-iii-ZyniVuEhxVk-unsplash.png"
                 alt="Civic engagement"
-                className="rounded mb-3 w-full h-48 lg:h-56 object-cover lg:mb-4"
+                className="rounded mb-10 m-auto  h-48 w-48 lg:h-56 object-cover lg:mb-4"
               />
               <div className=" rounded-lg lg:p-6 flex flex-col items-center">
-                <p className="text-sm mb-2 lg:text-base lg:mb-4">
+                <p className="text-sm mb-2 lg:text-base lg:mb-4 mt-10">
                   Learn how you can participate and make a difference in your
                   community.
                 </p>
-                <button className="bg-[#007aff] text-white py-2  px-4 rounded-4xl w-80 lg:py-3 lg:text-lg hover:bg-[#0056cc] transition-colors">
+                <button className="bg-[#007aff] mt-10 text-white py-2  px-4 rounded-4xl w-80 lg:py-3 lg:text-lg hover:bg-[#0056cc] transition-colors">
                   Get Involved
                 </button>
               </div>

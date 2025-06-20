@@ -1,6 +1,15 @@
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
+// Sample candidate image imports (adjust paths & filenames as needed)
+import candidate1 from "../assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png";
+import candidate2 from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+import candidate3 from "../assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png";
+import candidate4 from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+// import filterIcon from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+
+const candidateImages = [candidate1, candidate2, candidate3, candidate4];
+
 const CandidatesExpanded = () => {
   return (
     <>
@@ -38,7 +47,7 @@ const CandidatesExpanded = () => {
           </button>
         </div>
 
-        {/* Section Template */}
+        {/* Candidate Sections */}
         {[
           "Presidential Candidates",
           "Gubernatorial Candidates",
@@ -51,41 +60,35 @@ const CandidatesExpanded = () => {
               {section}
             </h2>
 
-            {/* County Selector (not shown for first section) */}
+            {/* County Dropdown */}
             {idx > 0 && (
               <div className="flex justify-between items-center mb-6 md:mb-8">
                 <select className="text-xs md:text-sm border border-[#6EA646] p-3 rounded-full">
                   <option>County 001</option>
                 </select>
-                <img src="/filter-icon.svg" alt="filter" className="w-4 h-4" />
+                {/* <img src={filterIcon} alt="filter" className="w-4 h-4" /> */}
               </div>
             )}
 
             {/* Candidate Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {Array(4)
-                .fill(0)
-                .map((_, i) => (
-                  <div key={i} className="text-center">
-                    <img
-                      src="src/assets/candidates/Winston Salem Corporate Headshots & Personal….png"
-                      alt="Candidate"
-                      className="w-full rounded"
-                    />
-                    <p className="text-[11px] md:text-sm font-bold mt-1">
-                      John Doe
-                    </p>
-                    <p className="text-[10px] md:text-xs leading-tight">
-                      United Democratic Alliance (UDA)
-                    </p>
-                    <p className="text-[10px] md:text-xs italic mt-1">
-                      "Unity. Action. Progress."
-                    </p>
-                  </div>
-                ))}
+              {candidateImages.map((img, i) => (
+                <div key={i} className="text-center">
+                  <img src={img} alt="Candidate" className="w-full rounded" />
+                  <p className="text-[11px] md:text-sm font-bold mt-1">
+                    John Doe
+                  </p>
+                  <p className="text-[10px] md:text-xs leading-tight">
+                    United Democratic Alliance (UDA)
+                  </p>
+                  <p className="text-[10px] md:text-xs italic mt-1">
+                    "Unity. Action. Progress."
+                  </p>
+                </div>
+              ))}
             </div>
 
-            {/* View All Button */}
+            {/* View All */}
             <div className="text-center mt-3">
               <button className="text-xs md:text-sm float-end text-black italic border border-blue-800 px-4 py-[2px] rounded-full">
                 View All
@@ -94,7 +97,7 @@ const CandidatesExpanded = () => {
           </section>
         ))}
 
-        {/* Bottom CTA */}
+        {/* CTA */}
         <div className="text-center mt-20 mb-12">
           <p className="mb-2 font-bold text-base md:text-lg">
             Enter your region to explore MCAs or search them by name

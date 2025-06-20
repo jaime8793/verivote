@@ -124,7 +124,7 @@ const SingleCandidate = () => {
         <h2 className="text-sm font-extrabold mb-3">Campaign & Media</h2>
         <div className="relative mb-3">
           <img
-            src="src/assets/285708338_403252745164311_801316957641000861_n-370x370.jpg"
+            src="@/assets/285708338_403252745164311_801316957641000861_n-370x370.jpg"
             alt="Jubilee Campaign"
             className="rounded w-full"
           />

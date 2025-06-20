@@ -1,6 +1,9 @@
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
+import candidate1Img from "../assets/6249d6cf-faea-4353-acad-916f6b2c6345.png";
+import candidate2Img from "../assets/9015f31d-fdb3-4125-b9d5-8fcceed06925.png";
+
 const Compare = () => {
   return (
     <>
@@ -49,7 +52,7 @@ const Compare = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
           <div className="border border-gray-300 rounded px-2 py-3 text-center">
             <img
-              src="src/assets/candidates/6249d6cf-faea-4353-acad-916f6b2c6345.png"
+              src={candidate1Img}
               alt="Martin Kilonzo"
               className="rounded mb-2"
             />
@@ -61,7 +64,7 @@ const Compare = () => {
           </div>
           <div className="border border-[#43761E] rounded px-2 py-3 text-center">
             <img
-              src="src/assets/candidates/9015f31d-fdb3-4125-b9d5-8fcceed06925.png"
+              src={candidate2Img}
               alt="Kevin Oduor"
               className="rounded mb-2"
             />

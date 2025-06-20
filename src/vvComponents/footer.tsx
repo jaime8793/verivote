@@ -1,6 +1,6 @@
-
-
-
+import twitterIcon from "../assets/twitter.svg";
+import instagramIcon from "../assets/instagram.svg";
+import facebookIcon from "../assets/facebook.svg";
 
 export default function Footer() {
   return (
@@ -27,21 +27,9 @@ export default function Footer() {
         </a>
       </div>
       <div className="flex justify-center space-x-4">
-        <img
-          src="../src/assets/twitter.svg"
-          alt="Facebook"
-          className="w-4 h-4"
-        />
-        <img
-          src="../src/assets/instagram.svg"
-          alt="Twitter"
-          className="w-4 h-4"
-        />
-        <img
-          src="../src/assets/facebook.svg"
-          alt="Instagram"
-          className="w-4 h-4"
-        />
+        <img src={twitterIcon} alt="Twitter" className="w-4 h-4" />
+        <img src={instagramIcon} alt="Instagram" className="w-4 h-4" />
+        <img src={facebookIcon} alt="Facebook" className="w-4 h-4" />
       </div>
     </footer>
   );

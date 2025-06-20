@@ -1,39 +1,92 @@
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
+// Import all image assets
+import heroImg from "../assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png";
+import samuelImg from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+import fatimaImg from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+import kevinImg from "../assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png";
+import martinImg from "../assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png";
+
 const Candidates = () => {
+  const candidates = [
+    {
+      name: "Samuel Kiptroo",
+      party: "The National Alliance (TNA)",
+      quote: "Justice is the Agenda",
+      img: samuelImg,
+    },
+    {
+      name: "Fatima Noor",
+      party: "Jubilee Party",
+      quote: "Leading with Vision, Grounded in Truth",
+      img: fatimaImg,
+    },
+    {
+      name: "Kevin Oduor",
+      party: "KANU",
+      quote: "Youth. Jobs. The Future.",
+      img: kevinImg,
+    },
+    {
+      name: "Martin Kilonzo",
+      party: "Maendeleo Chap Chap",
+      quote: "Smart Leadership for Real Change",
+      img: martinImg,
+    },
+    {
+      name: "Kevin Oduor",
+      party: "KANU",
+      quote: "Youth. Jobs. The Future.",
+      img: samuelImg,
+    },
+    {
+      name: "Grace Wanjiru",
+      party: "Wiper Democratic Movement – Kenya",
+      quote: "Hope for Every Household",
+      img: fatimaImg,
+    },
+    {
+      name: "Daniel Okoth",
+      party: "UDEA",
+      quote: "Integrity. Action. Progress.",
+      img: kevinImg,
+    },
+    {
+      name: "Aisha Mutua",
+      party: "ODM",
+      quote: "Together, We Prosper",
+      img: martinImg,
+    },
+  ];
+
   return (
     <>
       <main className="w-full max-w-md md:max-w-4xl lg:max-w-6xl mx-auto px-4 py-4 font-[Helvetica] text-gray-900">
-        {/* Breadcrumb */}
         <p className="text-xs md:text-sm mb-4">Home &gt; Candidates</p>
 
-        {/* Search */}
         <div className="mb-4">
           <SearchBar />
         </div>
 
-        {/* CTA Filter */}
         <div className="mb-4">
           <button className="bg-[#43761E] text-white text-xs md:text-sm px-4 py-1 rounded-full font-medium">
             Filter
           </button>
         </div>
 
-        {/* Category Filter Button */}
         <div className="mb-4">
           <button className="border shadow mt-4 text-black text-xs md:text-sm px-4 py-1 rounded font-medium">
             Presidential Candidates
           </button>
         </div>
 
-        {/* Hero Image */}
+        {/* Hero Section */}
         <div className="mb-4">
           <div
             className="w-full h-48 md:h-64 lg:h-72 bg-cover bg-center rounded-md relative overflow-hidden"
             style={{
-              backgroundImage:
-                "url('public/mustafa-alabri-JxzV1k-sfCU-unsplash.png')",
+              backgroundImage: `url(${heroImg})`,
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-4 md:px-6 text-white">
@@ -52,62 +105,13 @@ const Candidates = () => {
           </div>
         </div>
 
-        {/* Candidate Grid */}
+        {/* Candidates Grid */}
         <div className="mb-6">
           <h2 className="text-xl md:text-2xl font-extrabold mb-8 mt-16">
             Presidential Candidates
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-xs md:text-sm">
-            {[
-              {
-                name: "Samuel Kiptroo",
-                party: "The National Alliance (TNA)",
-                quote: "Justice is the Agenda",
-                img: "src/assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png",
-              },
-              {
-                name: "Fatima Noor",
-                party: "Jubilee Party",
-                quote: "Leading with Vision, Grounded in Truth",
-                img: "src/assets/Get your headshots! It's the second half of the….png",
-              },
-              {
-                name: "Kevin Oduor",
-                party: "KANU",
-                quote: "Youth. Jobs. The Future.",
-                img: "src/assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png",
-              },
-              {
-                name: "Martin Kilonzo",
-                party: "Maendeleo Chap Chap",
-                quote: "Smart Leadership for Real Change",
-                img: "src/assets/James understands the power of a refined corporate….png",
-              },
-              {
-                name: "Kevin Oduor",
-                party: "KANU",
-                quote: "Youth. Jobs. The Future.",
-                img: "src/assets/918b4624-d71f-4fbb-aeb7-063e19f30949.png",
-              },
-              {
-                name: "Grace Wanjiru",
-                party: "Wiper Democratic Movement – Kenya",
-                quote: "Hope for Every Household",
-                img: "src/assets/Get your headshots! It's the second half of the….png",
-              },
-              {
-                name: "Daniel Okoth",
-                party: "UDEA",
-                quote: "Integrity. Action. Progress.",
-                img: "src/assets/1be01b4c-9a41-403f-92c2-9d5c960b0791.png",
-              },
-              {
-                name: "Aisha Mutua",
-                party: "ODM",
-                quote: "Together, We Prosper",
-                img: "src/assets/James understands the power of a refined corporate….png",
-              },
-            ].map((cand, i) => (
+            {candidates.map((cand, i) => (
               <div key={i} className="text-center">
                 <img
                   src={cand.img}

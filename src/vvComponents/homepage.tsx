@@ -6,20 +6,20 @@ import Footer from "./footer";
 const heroSlides = [
   {
     image:
-      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Know your candidates.",
     subtext:
       "Explore upcoming campaign stops and hear directly from the people seeking your vote.",
   },
   {
     image:
-      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Vote with confidence.",
     subtext: "Get the facts before you head to the polls.",
   },
   {
     image:
-      "src/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Make your voice count.",
     subtext: "Learn how to register and get involved today.",
   },
@@ -137,7 +137,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-4 lg:gap-6 lg:mt-12 xl:gap-8 xl:mt-16">
             <div className="text-center">
               <img
-                src="src/assets/602895d8-aa40-48ed-9178-2873e29a51da.png"
+                src="@/assets/602895d8-aa40-48ed-9178-2873e29a51da.png"
                 alt="Candidate 1"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -148,7 +148,7 @@ const LandingPage = () => {
             </div>
             <div className="text-center">
               <img
-                src="src/assets/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
+                src="@/assets/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
                 alt="Candidate 2"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -162,7 +162,7 @@ const LandingPage = () => {
             {/* Additional candidates for larger screens */}
             <div className="text-center hidden lg:block">
               <img
-                src="/candidate3.jpg"
+                src="@/assets/candidate3.jpg"
                 alt="Candidate 3"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -173,7 +173,7 @@ const LandingPage = () => {
             </div>
             <div className="text-center hidden lg:block">
               <img
-                src="/candidate4.jpg"
+                src="@/assets/candidate4.jpg"
                 alt="Candidate 4"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -324,7 +324,7 @@ const LandingPage = () => {
           <div className="max-w-xs mx-auto text-left lg:max-w-none">
             <div className="flex items-center space-x-2 mb-2 lg:justify-center lg:mb-4 xl:mb-6">
               <img
-                src="src/assets/4eb55c90-7741-4c05-b621-faabe722221d.png"
+                src="@/assets/4eb55c90-7741-4c05-b621-faabe722221d.png"
                 alt="User"
                 className="w-8 h-8 rounded-full lg:w-8 lg:h-8 xl:w-10 xl:h-10"
               />

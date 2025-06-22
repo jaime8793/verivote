@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react"; 
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
@@ -41,7 +42,6 @@ const infoItems = [
 ];
 
 const LandingPage = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -49,6 +49,25 @@ const LandingPage = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto slide every 6 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
 
   return (
     <main
@@ -68,7 +87,10 @@ const LandingPage = () => {
         className="relative w-full h-[360px] lg:h-[480px] xl:h-[600px] bg-cover bg-center flex items-center justify-center transition-all duration-500"
         style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        {/* Text Content */}
         <div className="relative z-10 text-center text-white px-4 lg:px-8 xl:px-12">
           <h1 className="text-3xl font-bold leading-tight lg:text-5xl xl:text-6xl lg:max-w-4xl xl:max-w-6xl">
             {heroSlides[currentSlide].headline}
@@ -76,6 +98,33 @@ const LandingPage = () => {
           <p className="mt-2 text-sm lg:text-lg xl:text-xl lg:mt-4 xl:mt-6 lg:max-w-2xl xl:max-w-4xl mx-auto">
             {heroSlides[currentSlide].subtext}
           </p>
+        </div>
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black bg-opacity-30 hover:bg-opacity-60 text-white rounded-full hidden md:flex"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black bg-opacity-30 hover:bg-opacity-60 text-white rounded-full hidden md:flex"
+        >
+          <ChevronRight size={24} />
+        </button>
+
+        {/* Dots for mobile */}
+        <div className="absolute bottom-4 flex space-x-2 z-10">
+          {heroSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`h-2 w-2 rounded-full ${
+                index === currentSlide ? "bg-white" : "bg-white/50"
+              }`}
+            />
+          ))}
         </div>
       </section>
 
@@ -92,25 +141,36 @@ const LandingPage = () => {
           <h2 className="text-lg mt-20 font-bold mb-2 lg:text-2xl lg:mt-24 xl:text-3xl xl:mt-28 lg:text-center">
             Your Source for Informed Voting
           </h2>
-          <p className="text-sm mb-20 lg:text-base lg:mb-16 xl:text-lg xl:mb-20 lg:text-center lg:max-w-3xl lg:mx-auto">
+          <p className="text-sm mb-10 lg:text-base lg:mb-16 xl:text-lg xl:mb-20 lg:text-center lg:max-w-3xl lg:mx-auto">
             VeriVote empowers you to make informed choices by providing easy
             access to reliable candidate information.
           </p>
-          <div className="flex overflow-x-auto gap-6 px-2 max-w-md mx-auto scrollbar-hide lg:grid lg:grid-cols-2 lg:max-w-2xl lg:gap-8 xl:max-w-4xl xl:gap-12">
+
+          {/* Small screen: Scrollable cards */}
+          <div className="flex gap-6 px-2 max-w-md mx-auto overflow-x-auto scrollbar-hide lg:hidden">
             {infoItems.map((item, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 w-44 bg-white rounded shadow p-4 lg:w-full lg:p-6 xl:p-8"
+                className="flex-shrink-0 w-44 bg-white rounded shadow p-4"
               >
-                <div className="text-blue-600 text-3xl lg:text-4xl xl:text-5xl">
+                <div className="text-blue-600 text-3xl">{item.icon}</div>
+                <h3 className="font-semibold text-sm mt-2">{item.title}</h3>
+                <p className="text-xs mt-1">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Medium and up: Grid layout */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-12 lg:max-w-2xl xl:max-w-4xl lg:mx-auto">
+            {infoItems.map((item, idx) => (
+              <div key={idx} className="bg-white rounded shadow p-6 xl:p-8">
+                <div className="text-blue-600 text-4xl xl:text-5xl">
                   {item.icon}
                 </div>
-                <h3 className="font-semibold text-sm mt-2 lg:text-base lg:mt-3 xl:text-lg xl:mt-4">
+                <h3 className="font-semibold text-base mt-3 xl:text-lg xl:mt-4">
                   {item.title}
                 </h3>
-                <p className="text-xs mt-1 lg:text-sm lg:mt-2 xl:text-base">
-                  {item.description}
-                </p>
+                <p className="text-sm mt-2 xl:text-base">{item.description}</p>
               </div>
             ))}
           </div>
@@ -162,7 +222,7 @@ const LandingPage = () => {
             {/* Additional candidates for larger screens */}
             <div className="text-center hidden lg:block">
               <img
-                src="@/assets/candidate3.jpg"
+                src="public/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
                 alt="Candidate 3"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -324,7 +384,7 @@ const LandingPage = () => {
           <div className="max-w-xs mx-auto text-left lg:max-w-none">
             <div className="flex items-center space-x-2 mb-2 lg:justify-center lg:mb-4 xl:mb-6">
               <img
-                src="@/assets/4eb55c90-7741-4c05-b621-faabe722221d.png"
+                src="public/4eb55c90-7741-4c05-b621-faabe722221d.png"
                 alt="User"
                 className="w-8 h-8 rounded-full lg:w-8 lg:h-8 xl:w-10 xl:h-10"
               />

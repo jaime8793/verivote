@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img
-              src="@/assets/App Icon.png"
+              src="public/App Icon.png"
               alt="Logo"
               className="h-8 lg:h-10 xl:h-12"
             />
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li>
               <button className="hover:text-blue-600 p-2 rounded-md hover:bg-blue-50">
                 <img
-                  src="@/assets/mynaui_accessibility-solid.png"
+                  src="public/mynaui_accessibility-solid.png"
                   alt="Accessibility"
                   className="h-6 w-6"
                 />

@@ -54,7 +54,7 @@ const Compare = () => {
             <img
               src={candidate1Img}
               alt="Martin Kilonzo"
-              className="rounded mb-2"
+              className="rounded mb-2 m-auto"
             />
             <p className="text-sm font-semibold">Martin Kilonzo</p>
             <p className="text-xs">Maendeleo Chap Chap</p>
@@ -66,7 +66,7 @@ const Compare = () => {
             <img
               src={candidate2Img}
               alt="Kevin Oduor"
-              className="rounded mb-2"
+              className="rounded mb-2 m-auto"
             />
             <p className="text-sm font-semibold">Kevin Oduor</p>
             <p className="text-xs">KANU</p>

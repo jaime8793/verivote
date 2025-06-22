@@ -86,7 +86,7 @@ const Candidates = () => {
         {/* Hero Section */}
         <div className="mb-4 lg:mb-8">
           <div
-            className="w-full h-48 md:h-64 lg:h-80 xl:h-96 2xl:h-[28rem] bg-cover bg-center rounded-md relative overflow-hidden shadow-lg"
+            className="w-full h-48 md:h-64 lg:h-80 xl:h-96 2xl:h-[32rem] bg-cover  rounded-md relative overflow-hidden shadow-lg"
             style={{
               backgroundImage: `url(${heroImg})`,
             }}
@@ -124,9 +124,9 @@ const Candidates = () => {
                   <img
                     src={cand.img}
                     alt={cand.name}
-                    className="rounded w-48 lg:w-full m-auto h-48 lg:h-56 xl:h-64 2xl:h-72 object-cover shadow-md group-hover:shadow-xl transition-shadow"
+                    className="rounded w-48 lg:w-56 m-auto h-48 lg:h-56 xl:h-64 2xl:h-72 object-cover shadow-md group-hover:shadow-xl transition-shadow"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-200 rounded"></div>
+                  <div className="absolute inset-0  bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-200 rounded"></div>
                 </div>
                 <div className="space-y-1 lg:space-y-2">
                   <p className="font-bold text-sm lg:text-base xl:text-lg 2xl:text-xl">

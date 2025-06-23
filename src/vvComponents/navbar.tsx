@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "Elections", path: "/elections" },
     { name: "Issues", path: "/issues" },
     { name: "Resources", path: "/resources" },
-    { name: "Account", path: "/account" },
+    { name: "faqs", path: "/faqs" },
     { name: "Contact Us", path: "/contact" },
   ];
 
@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img
-              src="public/App Icon.png"
+              src="/App Icon.png"
               alt="Logo"
               className="h-8 lg:h-10 xl:h-12"
             />
@@ -74,7 +74,7 @@ const Navbar = () => {
             </button>
             <button>
               <img
-                src="@/assets/mynaui_accessibility-solid.png"
+                src="/mynaui_accessibility-solid.png"
                 alt="Accessibility"
                 className="h-6 w-6"
               />

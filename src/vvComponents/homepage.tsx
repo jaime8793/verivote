@@ -7,20 +7,19 @@ import Footer from "./footer";
 const heroSlides = [
   {
     image:
-      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+      "/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Know your candidates.",
     subtext:
       "Explore upcoming campaign stops and hear directly from the people seeking your vote.",
   },
   {
-    image:
-      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+    image: "/tito-texidor-iii-ZyniVuEhxVk-unsplash.png",
     headline: "Vote with confidence.",
     subtext: "Get the facts before you head to the polls.",
   },
   {
     image:
-      "@/assets/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
+      "/west-kenya-union-conference-adventist-media-ds43iXMG8UQ-unsplash.png",
     headline: "Make your voice count.",
     subtext: "Learn how to register and get involved today.",
   },
@@ -84,11 +83,11 @@ const LandingPage = () => {
 
       {/* Hero Carousel */}
       <section
-        className="relative w-full h-[360px] lg:h-[480px] xl:h-[600px] bg-cover bg-center flex items-center justify-center transition-all duration-500"
+        className="relative w-full  h-[360px] lg:h-[480px] xl:h-[600px] bg-cover bg-center flex items-center justify-center transition-all duration-500"
         style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Text Content */}
         <div className="relative z-10 text-center text-white px-4 lg:px-8 xl:px-12">
@@ -197,9 +196,9 @@ const LandingPage = () => {
           <div className="grid grid-cols-2 gap-4 mt-10 lg:grid-cols-4 lg:gap-6 lg:mt-12 xl:gap-8 xl:mt-16">
             <div className="text-center">
               <img
-                src="@/assets/602895d8-aa40-48ed-9178-2873e29a51da.png"
+                src="/602895d8-aa40-48ed-9178-2873e29a51da.png"
                 alt="Candidate 1"
-                className="w-full rounded lg:h-48 xl:h-56 object-cover"
+                className="h-56 m-auto rounded lg:h-48 xl:h-56 object-cover"
               />
               <p className="text-xs mt-1 font-bold lg:text-sm lg:mt-2 xl:text-base">
                 Peter Salley
@@ -208,9 +207,9 @@ const LandingPage = () => {
             </div>
             <div className="text-center">
               <img
-                src="@/assets/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
+                src="/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
                 alt="Candidate 2"
-                className="w-full rounded lg:h-48 xl:h-56 object-cover"
+                className="h-56 m-auto rounded lg:h-48 xl:h-56 object-cover"
               />
               <p className="text-xs mt-1 font-bold lg:text-sm lg:mt-2 xl:text-base">
                 Ben Cox
@@ -222,7 +221,7 @@ const LandingPage = () => {
             {/* Additional candidates for larger screens */}
             <div className="text-center hidden lg:block">
               <img
-                src="public/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
+                src="/777014c1-33f8-4b11-bbea-1d7eb49f8d4a.png"
                 alt="Candidate 3"
                 className="w-full rounded lg:h-48 xl:h-56 object-cover"
               />
@@ -272,7 +271,7 @@ const LandingPage = () => {
                 ✔️ voted yes
               </div>
               <div className="py-2 border-t border-l border-black lg:py-3">
-                ✔️ voted No
+                ❌ voted No
               </div>
             </div>
             <div className="grid grid-cols-1 bg-green-700 text-white text-xs text-center font-semibold lg:text-sm xl:text-base">

@@ -21,7 +21,7 @@ export default function SearchBar() {
       />
       <button className="ml-2 flex-shrink-0">
         <img
-          src="public/basil_location-solid.png"
+          src="/basil_location-solid.png"
           alt="Logo"
           className="h-8"
         />

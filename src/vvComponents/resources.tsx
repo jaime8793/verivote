@@ -66,7 +66,7 @@ const Resources = () => {
                 your voice heard.
               </p>
               <img
-                src="src/assets/barbara-burgess-3uiVo7ala9k-unsplash.png"
+                src="/barbara-burgess-3uiVo7ala9k-unsplash.png"
                 alt="Voting is my superpower"
                 className="rounded mb-4 w-48 m-auto h-48 lg:h-56 object-cover"
               />
@@ -113,7 +113,7 @@ const Resources = () => {
               </h3>
 
               <img
-                src="src/assets/tito-texidor-iii-ZyniVuEhxVk-unsplash.png"
+                src="/tito-texidor-iii-ZyniVuEhxVk-unsplash.png"
                 alt="Civic engagement"
                 className="rounded mb-10 m-auto  h-48 w-48 lg:h-56 object-cover lg:mb-4"
               />

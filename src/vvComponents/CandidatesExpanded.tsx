@@ -74,7 +74,7 @@ const CandidatesExpanded = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {candidateImages.map((img, i) => (
                 <div key={i} className="text-center">
-                  <img src={img} alt="Candidate" className="w-full rounded" />
+                  <img src={img} alt="Candidate" className="w-56 m-auto rounded" />
                   <p className="text-[11px] md:text-sm font-bold mt-1">
                     John Doe
                   </p>

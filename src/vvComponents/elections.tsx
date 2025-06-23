@@ -37,7 +37,7 @@ const Elections = () => {
             {/* Poster */}
             <div className="mb-3 lg:mb-6">
               <img
-                src="/public/image (1).png"
+                src="/image (1).png"
                 alt="Peaceful Kenya Election"
                 className="rounded w-80 lg:w-full xl:w-96 m-auto lg:m-0"
               />
@@ -84,12 +84,12 @@ const Elections = () => {
             {/* Media Poster */}
             <div className="relative mb-2 lg:mb-4">
               <img
-                src="public/image (2).png"
+                src="/image (2).png"
                 alt="Jubilee Campaign"
                 className="rounded w-80 lg:w-full xl:w-96"
               />
               <div className="absolute bottom-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 text-xs md:text-sm lg:text-base font-semibold rounded">
-                Jane Doe Campaign
+                Jubilee Campaign
               </div>
             </div>
 

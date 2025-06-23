@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; 
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import SearchBar from "./searchbar";
 import Footer from "./footer";
 
@@ -41,7 +41,6 @@ const infoItems = [
 ];
 
 const LandingPage = () => {
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
@@ -67,7 +66,6 @@ const LandingPage = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
 
-
   return (
     <main
       className="w-full overflow-x-hidden text-gray-800"
@@ -83,7 +81,7 @@ const LandingPage = () => {
 
       {/* Hero Carousel */}
       <section
-        className="relative w-full  h-[360px] lg:h-[480px] xl:h-[600px] bg-cover bg-center flex items-center justify-center transition-all duration-500"
+        className="relative w-full max-w-[1260px] m-auto aspect-[16/9] sm:aspect-[2/1] md:aspect-[5/2] lg:aspect-[3/1]  xl:aspect-[7/2] bg-cover bg-center bg-no-repeat flex items-center justify-center transition-all duration-500 ease-in-out"
         style={{ backgroundImage: `url(${heroSlides[currentSlide].image})` }}
       >
         {/* Overlay */}
